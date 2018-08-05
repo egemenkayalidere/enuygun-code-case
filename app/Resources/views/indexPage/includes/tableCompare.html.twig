@@ -1,0 +1,21 @@
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <caption>Best Prices</caption>
+        <thead>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Best Price</th>
+            <th scope="col">Provider</th>
+        </tr>
+        </thead>
+        <tbody id="compare">
+        {% for key,data in bestPrices %}
+            <tr>
+                <td>{{ data.symbol }}</td>
+                <td>{{ data.value }}</td>
+                <td>{{ data.provider }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

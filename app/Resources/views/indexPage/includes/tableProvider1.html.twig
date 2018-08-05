@@ -1,0 +1,19 @@
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <caption>Provider 1</caption>
+        <thead>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Value</th>
+        </tr>
+        </thead>
+        <tbody id="provider1">
+        {% for data in provider1 %}
+            <tr>
+                <td>{{ data.kod }}</td>
+                <td>{{ data.oran }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
